@@ -47,7 +47,7 @@ export const AnalyticsSettings: React.FC<AnalyticsSettingsProps> = ({ isDarkMode
     return (
       <section className="space-y-6">
         <div
-          className={`rounded-lg border ${isDarkMode ? 'border-slate-700 bg-slate-800' : 'border-blue-100 bg-gray-50'} p-6 text-left shadow-sm`}>
+          className={`rounded-lg border ${isDarkMode ? 'border-slate-700 bg-slate-800' : 'border-teal-100 bg-gray-50'} p-6 text-left shadow-sm`}>
           <h2 className={`mb-4 text-xl font-semibold ${isDarkMode ? 'text-gray-200' : 'text-gray-800'}`}>
             Analytics Settings
           </h2>
@@ -64,7 +64,7 @@ export const AnalyticsSettings: React.FC<AnalyticsSettingsProps> = ({ isDarkMode
     return (
       <section className="space-y-6">
         <div
-          className={`rounded-lg border ${isDarkMode ? 'border-slate-700 bg-slate-800' : 'border-blue-100 bg-gray-50'} p-6 text-left shadow-sm`}>
+          className={`rounded-lg border ${isDarkMode ? 'border-slate-700 bg-slate-800' : 'border-teal-100 bg-gray-50'} p-6 text-left shadow-sm`}>
           <h2 className={`mb-4 text-xl font-semibold ${isDarkMode ? 'text-gray-200' : 'text-gray-800'}`}>
             Analytics Settings
           </h2>
@@ -77,7 +77,7 @@ export const AnalyticsSettings: React.FC<AnalyticsSettingsProps> = ({ isDarkMode
   return (
     <section className="space-y-6">
       <div
-        className={`rounded-lg border ${isDarkMode ? 'border-slate-700 bg-slate-800' : 'border-blue-100 bg-gray-50'} p-6 text-left shadow-sm`}>
+        className={`rounded-lg border ${isDarkMode ? 'border-slate-700 bg-slate-800' : 'border-teal-100 bg-gray-50'} p-6 text-left shadow-sm`}>
         <h2 className={`mb-4 text-xl font-semibold ${isDarkMode ? 'text-gray-200' : 'text-gray-800'}`}>
           Analytics Settings
         </h2>
@@ -103,7 +103,7 @@ export const AnalyticsSettings: React.FC<AnalyticsSettingsProps> = ({ isDarkMode
                 <label
                   htmlFor="analytics-enabled"
                   className={`block h-6 cursor-pointer overflow-hidden rounded-full ${
-                    settings.enabled ? 'bg-blue-500' : isDarkMode ? 'bg-gray-600' : 'bg-gray-300'
+                    settings.enabled ? 'bg-teal-500' : isDarkMode ? 'bg-gray-600' : 'bg-gray-300'
                   }`}>
                   <span className="sr-only">Toggle analytics</span>
                   <span

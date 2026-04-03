@@ -20,9 +20,9 @@ function generateAnonymousUserId(): string {
   return 'anon_' + Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
 }
 
-// Default settings - enabled by default as per requirements
+// Default settings - disabled by default
 export const DEFAULT_ANALYTICS_SETTINGS: AnalyticsSettingsConfig = {
-  enabled: true,
+  enabled: false,
   anonymousUserId: '',
 };
 

@@ -56,7 +56,7 @@ export const FirewallSettings = ({ isDarkMode }: FirewallSettingsProps) => {
   return (
     <section className="space-y-6">
       <div
-        className={`rounded-lg border ${isDarkMode ? 'border-slate-700 bg-slate-800' : 'border-blue-100 bg-gray-50'} p-6 text-left shadow-sm`}>
+        className={`rounded-lg border ${isDarkMode ? 'border-slate-700 bg-slate-800' : 'border-teal-100 bg-gray-50'} p-6 text-left shadow-sm`}>
         <h2 className={`mb-4 text-xl font-semibold ${isDarkMode ? 'text-gray-200' : 'text-gray-800'}`}>
           {t('options_firewall_header')}
         </h2>
@@ -81,7 +81,7 @@ export const FirewallSettings = ({ isDarkMode }: FirewallSettingsProps) => {
                 <label
                   htmlFor="toggle-firewall"
                   className={`block h-6 cursor-pointer overflow-hidden rounded-full ${
-                    isEnabled ? 'bg-blue-500' : isDarkMode ? 'bg-gray-600' : 'bg-gray-300'
+                    isEnabled ? 'bg-teal-500' : isDarkMode ? 'bg-gray-600' : 'bg-gray-300'
                   }`}>
                   <span className="sr-only">{t('options_firewall_toggleFirewall_a11y')}</span>
                   <span
@@ -101,8 +101,8 @@ export const FirewallSettings = ({ isDarkMode }: FirewallSettingsProps) => {
                 className={`px-4 py-2 text-base ${
                   activeList === 'allow'
                     ? isDarkMode
-                      ? 'bg-blue-600 text-white'
-                      : 'bg-blue-500 text-white'
+                      ? 'bg-teal-600 text-white'
+                      : 'bg-teal-500 text-white'
                     : isDarkMode
                       ? 'bg-slate-700 text-gray-200'
                       : 'bg-gray-200 text-gray-700'
@@ -114,8 +114,8 @@ export const FirewallSettings = ({ isDarkMode }: FirewallSettingsProps) => {
                 className={`px-4 py-2 text-base ${
                   activeList === 'deny'
                     ? isDarkMode
-                      ? 'bg-blue-600 text-white'
-                      : 'bg-blue-500 text-white'
+                      ? 'bg-teal-600 text-white'
+                      : 'bg-teal-500 text-white'
                     : isDarkMode
                       ? 'bg-slate-700 text-gray-200'
                       : 'bg-gray-200 text-gray-700'
@@ -207,7 +207,7 @@ export const FirewallSettings = ({ isDarkMode }: FirewallSettingsProps) => {
       </div>
 
       <div
-        className={`rounded-lg border ${isDarkMode ? 'border-slate-700 bg-slate-800' : 'border-blue-100 bg-gray-50'} p-6 text-left shadow-sm`}>
+        className={`rounded-lg border ${isDarkMode ? 'border-slate-700 bg-slate-800' : 'border-teal-100 bg-gray-50'} p-6 text-left shadow-sm`}>
         <h2 className={`mb-4 text-xl font-semibold ${isDarkMode ? 'text-gray-200' : 'text-gray-800'}`}>
           {t('options_firewall_howItWorks_header')}
         </h2>
