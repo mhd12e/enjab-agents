@@ -1,22 +1,22 @@
 /* Add this at the top of the file */
 body {
-  border-color: rgb(159, 6, 11) !important; /* sky-200 color */
+  border-color: rgb(13, 148, 136) !important; /* teal-600 color */
 }
 
 /* Remove unused classes: .App, .App-logo, .App-header */
 
 code {
-  background: rgba(186, 230, 253, 0.4);
+  background: rgba(153, 246, 228, 0.4);
   border-radius: 0.25rem;
   padding: 0.2rem 0.5rem;
-  color: #0369a1;
+  color: #0f766e;
 }
 
 /* Dark mode support for code */
 @media (prefers-color-scheme: dark) {
   code {
-    background: rgba(30, 58, 138, 0.4);
-    color: #7dd3fc;
+    background: rgba(19, 78, 74, 0.4);
+    color: #5eead4;
   }
 }
 
@@ -30,12 +30,12 @@ code {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #0ea5e9;
+  background: #0d9488;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #0284c7;
+  background: #0f766e;
 }
 
 /* Dark mode scrollbar */
@@ -45,11 +45,11 @@ code {
   }
   
   ::-webkit-scrollbar-thumb {
-    background: #0ea5e9;
+    background: #0d9488;
   }
-  
+
   ::-webkit-scrollbar-thumb:hover {
-    background: #38bdf8;
+    background: #2dd4bf;
   }
 }
 
@@ -60,13 +60,13 @@ code {
   align-items: center;
   padding: 0.75rem;
   background-color: transparent;
-  border-bottom: 1px solid rgba(14, 165, 233, 0.2);
+  border-bottom: 1px solid rgba(13, 148, 136, 0.2);
 }
 
 /* Dark mode header border */
 @media (prefers-color-scheme: dark) {
   .header {
-    border-bottom: 1px solid rgba(14, 165, 233, 0.3);
+    border-bottom: 1px solid rgba(13, 148, 136, 0.3);
   }
 }
 
@@ -82,26 +82,26 @@ code {
 }
 
 .header-icon {
-  color: #19C2FF;
+  color: #2DD4BF;
   cursor: pointer;
   transition: color 0.2s ease;
   opacity: 0.8;
 }
 
 .header-icon:hover {
-  color: #0073DC;
+  color: #0F766E;
   opacity: 1;
 }
 
 .send-button {
-  color: #19C2FF;
+  color: #2DD4BF;
   cursor: pointer;
   transition: color 0.2s ease;
   opacity: 0.8;
 }
 
 .send-button:hover {
-  color: #0073DC;
+  color: #0F766E;
   opacity: 1;
 }
 
@@ -122,16 +122,16 @@ code {
 }
 
 .scrollbar-gutter-stable::-webkit-scrollbar-track {
-  background: #f1f5f9;  /* sky-50 */
+  background: #f1f5f9;  /* slate-100 */
 }
 
 .scrollbar-gutter-stable::-webkit-scrollbar-thumb {
-  background: #7dd3fc;  /* sky-300 - very light blue */
+  background: #5eead4;  /* teal-300 */
   border-radius: 4px;
 }
 
 .scrollbar-gutter-stable::-webkit-scrollbar-thumb:hover {
-  background: #38bdf8;  /* sky-400 - slightly darker on hover */
+  background: #2dd4bf;  /* teal-400 */
 }
 
 /* Dark mode scrollbar for scrollbar-gutter-stable */
@@ -141,11 +141,11 @@ code {
   }
   
   .scrollbar-gutter-stable::-webkit-scrollbar-thumb {
-    background: #0ea5e9;  /* sky-500 */
+    background: #0d9488;  /* teal-600 */
   }
-  
+
   .scrollbar-gutter-stable::-webkit-scrollbar-thumb:hover {
-    background: #38bdf8;  /* sky-400 */
+    background: #2dd4bf;  /* teal-400 */
   }
 }
 

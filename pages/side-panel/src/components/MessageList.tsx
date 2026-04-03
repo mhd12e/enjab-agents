@@ -40,7 +40,7 @@ function MessageBlock({ message, isSameActor, isDarkMode = false }: MessageBlock
     <div
       className={`flex max-w-full gap-3 ${
         !isSameActor
-          ? `mt-4 border-t ${isDarkMode ? 'border-sky-800/50' : 'border-sky-200/50'} pt-4 first:mt-0 first:border-t-0 first:pt-0`
+          ? `mt-4 border-t ${isDarkMode ? 'border-teal-800/50' : 'border-teal-200/50'} pt-4 first:mt-0 first:border-t-0 first:pt-0`
           : ''
       }`}>
       {!isSameActor && (
