@@ -149,6 +149,90 @@ code {
   }
 }
 
+/* Compact prose for chat messages */
+.prose.prose-sm {
+  --tw-prose-links: #0d9488;
+}
+
+.prose.prose-sm p {
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+
+.prose.prose-sm ul,
+.prose.prose-sm ol {
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+  padding-left: 1.25em;
+}
+
+.prose.prose-sm li {
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+}
+
+.prose.prose-sm h1,
+.prose.prose-sm h2,
+.prose.prose-sm h3,
+.prose.prose-sm h4 {
+  margin-top: 0.5em;
+  margin-bottom: 0.25em;
+}
+
+.prose.prose-sm pre {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding: 0.75em;
+  border-radius: 0.375rem;
+  background: #1e293b;
+  color: #e2e8f0;
+  overflow-x: auto;
+}
+
+.prose.prose-sm code {
+  font-size: 0.8em;
+}
+
+.prose.prose-sm pre code {
+  background: transparent;
+  padding: 0;
+  color: inherit;
+}
+
+.prose.prose-sm blockquote {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding-left: 0.75em;
+  border-left: 3px solid #0d9488;
+  font-style: italic;
+}
+
+.prose.prose-sm a {
+  text-decoration: underline;
+}
+
+.prose.prose-sm a:hover {
+  color: #0f766e;
+}
+
+@media (prefers-color-scheme: dark) {
+  .prose-invert.prose-sm {
+    --tw-prose-links: #2dd4bf;
+  }
+
+  .prose-invert.prose-sm pre {
+    background: #0f172a;
+  }
+
+  .prose-invert.prose-sm blockquote {
+    border-left-color: #2dd4bf;
+  }
+
+  .prose-invert.prose-sm a:hover {
+    color: #5eead4;
+  }
+}
+
 /* Dark mode text and background colors */
 @media (prefers-color-scheme: dark) {
   .dark-mode-text {

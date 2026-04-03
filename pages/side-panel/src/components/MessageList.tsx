@@ -1,6 +1,8 @@
 import type { Message } from '@extension/storage';
+import { Actors } from '@extension/storage';
 import { ACTOR_PROFILES } from '../types/message';
 import { memo } from 'react';
+import Markdown from 'react-markdown';
 
 interface MessageListProps {
   messages: Message[];
@@ -35,6 +37,7 @@ function MessageBlock({ message, isSameActor, isDarkMode = false }: MessageBlock
   }
   const actor = ACTOR_PROFILES[message.actor as keyof typeof ACTOR_PROFILES];
   const isProgress = message.content === 'Showing progress...';
+  const isAgentMessage = message.actor !== Actors.USER;
 
   return (
     <div
@@ -60,13 +63,17 @@ function MessageBlock({ message, isSameActor, isDarkMode = false }: MessageBlock
         )}
 
         <div className="space-y-0.5">
-          <div className={`whitespace-pre-wrap break-words text-sm ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+          <div className={`break-words text-sm ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>
             {isProgress ? (
               <div className={`h-1 overflow-hidden rounded ${isDarkMode ? 'bg-gray-700' : 'bg-gray-200'}`}>
-                <div className="h-full animate-progress bg-blue-500" />
+                <div className="h-full animate-progress bg-teal-500" />
+              </div>
+            ) : isAgentMessage ? (
+              <div className={`prose prose-sm max-w-none ${isDarkMode ? 'prose-invert' : ''}`}>
+                <Markdown>{message.content}</Markdown>
               </div>
             ) : (
-              message.content
+              <span className="whitespace-pre-wrap">{message.content}</span>
             )}
           </div>
           {!isProgress && (
