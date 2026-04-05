@@ -1165,6 +1165,9 @@ export default class Page {
           el.dispatchEvent(new Event('change', { bubbles: true }));
         });
 
+        // Ensure focus before typing — the clear operation can disturb focus state
+        await element.focus();
+
         // Type the text with a small delay between keypresses
         await element.type(text, { delay: 50 });
       } else {
